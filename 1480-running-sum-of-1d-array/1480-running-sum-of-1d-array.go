@@ -1,9 +1,11 @@
 func runningSum(nums []int) []int {
     
-    var sum = []int{nums[0]}
+    sum := make([]int, len(nums))
+    
+    sum[0] = nums[0]
     
     for i := 1; i < len(nums); i++ {
-        sum = append(sum,sum[i-1]+nums[i])
+        sum[i] = sum[i-1]+nums[i]
     }
     
     return sum
