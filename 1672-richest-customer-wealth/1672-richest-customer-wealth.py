@@ -4,18 +4,21 @@ class Solution(object):
         :type accounts: List[List[int]]
         :rtype: int
         """
-        output = 0
+#         output = 0
         
-        for i in range(len(accounts)):
-            wealth = 0
+#         for i in range(len(accounts)):
+#             wealth = 0
             
-            for j in range(len(accounts[0])):
-                wealth = wealth + accounts[i][j]
+#             for j in range(len(accounts[0])):
+#                 wealth = wealth + accounts[i][j]
                 
-            if wealth > output:
-                output = wealth
+#             if wealth > output:
+#                 output = wealth
         
-        return output
+#         return output
         
+        # 2nd ...
+        
+        return max(map(sum, accounts))
             
         
