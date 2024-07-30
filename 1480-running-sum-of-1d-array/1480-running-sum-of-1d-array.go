@@ -1,13 +1,13 @@
 func runningSum(nums []int) []int {
     
-//     sum := []int{nums[0]}
-//     length := len(nums)
+    sum := []int{nums[0]}
+    length := len(nums)
     
-//     for i := 1; i < length; i++ {
-//         sum = append(sum, sum[i-1]+nums[i])
-//     }
+    for i := 1; i < length; i++ {
+        sum = append(sum, sum[i-1]+nums[i])
+    }
     
-//     return sum
+    return sum
     
 // 2nd ...
     
@@ -23,10 +23,10 @@ func runningSum(nums []int) []int {
 
 // 3rd ...
     
-    for i := 1; i < len(nums); i++ {
-        nums[i] += nums[i-1]
-    }
+//     for i := 1; i < len(nums); i++ {
+//         nums[i] += nums[i-1]
+//     }
     
-    return nums
+//     return nums
     
 }
