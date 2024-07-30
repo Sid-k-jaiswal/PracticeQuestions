@@ -4,14 +4,14 @@ The key insight here is that the running sum up to index i is the sum of nums[i]
 ​
 We know that
 ​
-`runningSum[i] = nums[0] + nums[1] + ... + nums[i-1] + nums[i].`
+`sum[i] = nums[0] + nums[1] + ... + nums[i-1] + nums[i].`
 ​
-###### However
+###### So,
 ​
-`runningSum[i-1] = nums[0] + nums[1] + ... + nums[i-1]`
+`sum[i-1] = nums[0] + nums[1] + ... + nums[i-1]`
 ​
 so we can rewrite the first expression to get that
 ######
-`runningSum[i] = runningSum[i-1] + nums[i]`
+`sum[i] = sum[i-1] + nums[i]`
 ######
 This code has a time complexity of O(N) since it only takes one pass, which will make the program run much faster when given a very large nums array. However, there is still a way to optimize the space we use.
