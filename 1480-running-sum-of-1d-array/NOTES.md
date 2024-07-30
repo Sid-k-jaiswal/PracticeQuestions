@@ -3,7 +3,7 @@ The key insight here is that the running sum up to index i is the sum of nums[i]
 ###### Here is a more detailled explanation:
 ​
 We know that
-​
+######
 `sum[i] = nums[0] + nums[1] + ... + nums[i-1] + nums[i].`
 ​
 ###### So,
