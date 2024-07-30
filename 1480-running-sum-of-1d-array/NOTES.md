@@ -1,8 +1,10 @@
 The key insight here is that the running sum up to index i is the sum of nums[i] and the running sum up to index i-1. Here is a more detailled explanation:
-\n\nWe know that \n
+​
+We know that
+​
 `runningSum[i] = nums[0] + nums[1] + ... + nums[i-1] + nums[i].`
 ​
-##### However
+However
 ​
 `runningSum[i-1] = nums[0] + nums[1] + ... + nums[i-1]`
 ​
