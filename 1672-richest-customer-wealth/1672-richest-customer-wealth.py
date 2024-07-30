@@ -19,6 +19,9 @@ class Solution(object):
         
         # 2nd ...
         
-        return max(map(sum, accounts))
-            
+        # return max(map(sum, accounts))
+        
+        # 3rd ...
+        
+        return max(sum(wealth) for wealth in accounts)
         
