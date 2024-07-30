@@ -6,8 +6,8 @@ class Solution(object):
         """
         sum = 0
         output = []
-        for i in nums:
-            sum = sum+i
+        for i in range(len(nums)):
+            sum = sum+nums[i]
             output.append(sum)
         
         return output
