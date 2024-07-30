@@ -9,8 +9,8 @@ func fizzBuzz(n int) []string {
         } else if i%5 == 0 {
             answer = append(answer, "Buzz")
         } else {
-            // answer = append(answer, fmt.Sprintf("%v",i))
-            answer = append(answer, strconv.Itoa(i))
+            answer = append(answer, fmt.Sprintf("%v",i))
+            // answer = append(answer, strconv.Itoa(i))
         }
     }
     
