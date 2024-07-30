@@ -1,6 +1,6 @@
 func maximumWealth(accounts [][]int) int {
     
-    wealth := 0
+    // wealth := 0
     
 //     for i := 0; i < len(accounts); i++ {
 //         sum := 0
@@ -16,10 +16,12 @@ func maximumWealth(accounts [][]int) int {
     
    // 2nd ...
     
-    for i, j := range accounts{
+    wealth := 0
+    
+    for _, j := range accounts{
         sum := 0
-        for k,_ := range j {
-            sum += accounts[i][k]
+        for _,l := range j {
+            sum += l
         }
         
         if sum > wealth {
