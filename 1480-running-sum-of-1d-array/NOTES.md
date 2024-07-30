@@ -4,7 +4,7 @@ We know that
 ​
 `runningSum[i] = nums[0] + nums[1] + ... + nums[i-1] + nums[i].`
 ​
-####### However
+###### However
 ​
 `runningSum[i-1] = nums[0] + nums[1] + ... + nums[i-1]`
 ​
