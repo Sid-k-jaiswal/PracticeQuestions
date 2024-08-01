@@ -8,13 +8,15 @@ class Solution(object):
         
         while num > 0:
             if num & 1 == 0:    # 1 in binary is 00000001
-                num = num >> 1  # >> means right shift all the bits by one place
+                num >>= 1  # >> means right shift all the bits by one place
             else:
-                num = num-1
+                num -= 1
             count += 1
         
         return count
-    
+
+# 2nd ...
+
 #         count = 0
         
 #         while num != 0:
@@ -26,7 +28,7 @@ class Solution(object):
 
 #         return count
 
-# 2nd ...
+# 3rd ...
 
 #         if num == 0:
 #             return 0
@@ -36,8 +38,6 @@ class Solution(object):
 #             num = 1 + self.numberOfSteps(num-1)
         
 #         return num
-
-# 3rd ...
 
 
 
