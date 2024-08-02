@@ -5,6 +5,9 @@ class Solution(object):
         :type magazine: str
         :rtype: bool
         """
+        if len(ransomNote) > len(magazine):
+            return False
+        
         dictionary = {}
         
         for i in magazine:
