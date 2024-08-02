@@ -5,20 +5,24 @@ class Solution(object):
         :type magazine: str
         :rtype: bool
         """
-        dictionary = {}
+#         dictionary = {}
         
-        for i in magazine:
-            if i not in dictionary:
-                dictionary[i] = 1
-            else:
-                dictionary[i] += 1
+#         for i in magazine:
+#             if i not in dictionary:
+#                 dictionary[i] = 1
+#             else:
+#                 dictionary[i] += 1
         
-        for i in ransomNote:
-            if i in dictionary and dictionary[i] > 0:
-                dictionary[i] -= 1
-            else:
-                return False
+#         for i in ransomNote:
+#             if i in dictionary and dictionary[i] > 0:
+#                 dictionary[i] -= 1
+#             else:
+#                 return False
             
-        return True
+#         return True
         
+        for character in magazine:
+            ransomNote = ransomNote.replace(character,'',1)
+        
+        return ransomNote == ''
             
