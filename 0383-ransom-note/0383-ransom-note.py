@@ -14,10 +14,10 @@ class Solution(object):
             output[ord(i)-ord('a')] += 1
         
         for i in ransomNote:
-            if output[ord(i)-ord('a')] > 0:
-                output[ord(i)-ord('a')] -= 1
-            else:
+            if output[ord(i)-ord('a')] == 0:
                 return False
+            
+            output[ord(i)-ord('a')] -= 1
             
         return True
         
