@@ -26,6 +26,9 @@ class Solution(object):
 
 # 2nd ...
 
+        # if len(ransomNote) > len(magazine):
+        #     return False
+        
 #         for character in magazine:
 #             ransomNote = ransomNote.replace(character,'',1)
         
