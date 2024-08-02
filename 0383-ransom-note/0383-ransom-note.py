@@ -5,6 +5,25 @@ class Solution(object):
         :type magazine: str
         :rtype: bool
         """
+        if len(ransomNote) > len(magazine):
+            return False
+        
+        output = [0]*26
+        
+        for i in magazine:
+            output[ord(i)-ord('a')] += 1
+        
+        for i in ransomNote:
+            if output[ord(i)-ord('a')] > 0:
+                output[ord(i)-ord('a')] -= 1
+            else:
+                return False
+            
+        return True
+        
+        
+# 2nd ...
+
 #         if len(ransomNote) > len(magazine):
 #             return False
         
@@ -24,13 +43,13 @@ class Solution(object):
             
 #         return True
 
-# 2nd ...
+# 3rd ...
 
-        if len(ransomNote) > len(magazine):
-            return False
+#         if len(ransomNote) > len(magazine):
+#             return False
         
-        for character in magazine:
-            ransomNote = ransomNote.replace(character,'',1)
+#         for character in magazine:
+#             ransomNote = ransomNote.replace(character,'',1)
         
-        return ransomNote == ''
+#         return ransomNote == ''
             
