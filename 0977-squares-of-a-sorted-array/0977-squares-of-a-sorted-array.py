@@ -27,8 +27,8 @@ class Solution(object):
         
         return output
         
-        
-        
+# 2nd ...        
+
 #         squares = []
         
 #         for i in range(len(nums)):
