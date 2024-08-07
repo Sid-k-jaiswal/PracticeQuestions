@@ -37,25 +37,3 @@ class Solution(object):
 #         squares.sort()
     
 #         return squares
-
-
-#        int len = nums.length;
-        
-#         int i = 0, j = len-1, k = len-1;
-        
-#         int a[] = new int[len];
-        
-#         while (i <= j)
-#         {
-#             int s1 = nums[i]*nums[i];
-#             int s2 = nums[j]*nums[j];
-            
-#             if (s1 > s2) {
-#                 a[k--] = s1;
-#                 i++;
-#             }
-#             else {
-#                 a[k--] = s2;
-#                 j--;
-#             }
-#         }
