@@ -6,9 +6,10 @@ class Solution(object):
         """
         
         first = 0
-        last = lastPointer = len(nums) - 1
+        l = len(nums)
+        last = lastPointer = l - 1
         
-        output = [0]*len(nums)
+        output = [0]*l
         
         while first <= last :
             
@@ -17,7 +18,6 @@ class Solution(object):
             
             if firstSquare > lastSquare:
                 output[lastPointer] = firstSquare
-                
                 lastPointer -= 1
                 first += 1
             else:
