@@ -10,5 +10,4 @@ func duplicateZeros(arr []int)  {
             i ++
         }
     }
-    
 }
