@@ -17,7 +17,8 @@ class Solution(object):
                 nums1[m+n-1] = nums2[n-1]
                 n -= 1
         
-        for i in range(m,n):
-            nums1[i] = nums2[i]
+        while n > 0:
+            nums1[n-1] = nums2[n-1]
+            n -= 1
             
         
