@@ -25,32 +25,6 @@ func duplicateZeros(arr []int)  {
             }
         }
     }
-    
-//         zeroesCount := 0
-//         n := len(arr)
-
-//         // Count the number of zeros
-//         for i := 0; i < n; i++ {
-//             if arr[i] == 0 {
-//                 zeroesCount++
-//             }
-//         }
-
-//         // Shift elements and duplicate zeros
-//         for j := n-1; j >= 0; j-- {
-//             // If there's enough space to place the element after shifting
-//             if j + zeroesCount < n {
-//                 arr[j + zeroesCount] = arr[j]
-//             }
-
-//             // If the element is zero, duplicate it
-//             if arr[j] == 0 {
-//                 zeroesCount--
-//                 if j + zeroesCount < n {
-//                     arr[j + zeroesCount] = 0
-//                 }
-//             }
-//         }
 
 // 2nd ...
     
