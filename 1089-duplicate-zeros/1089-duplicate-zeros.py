@@ -4,16 +4,42 @@ class Solution(object):
         :type arr: List[int]
         :rtype: None Do not return anything, modify arr in-place instead.
         """
-        queue = []
         
-        for i in range(len(arr)):
-            queue.append(arr[i])
-            
-            if arr[i] == 0:
-                queue.append(0)
-            
-            arr[i] = queue.pop(0)
+        # inp-> [0,3,4]
+        # op->  [0,0,3]
         
+        zeroes = arr.count(0)
+        n = len(arr)
+        
+        l = n-1
+        
+        while l >= 0:
+            
+            if l + zeroes < n:
+                arr[l + zeroes] = arr[l]
+            
+            if arr[l] == 0:
+                zeroes -= 1
+                
+                if l + zeroes < n:
+                    arr[l + zeroes] = 0
+                    
+            l -= 1
+            
+
+# 2nd ...
+#         queue = []
+        
+#         for i in range(len(arr)):
+#             queue.append(arr[i])
+            
+#             if arr[i] == 0:
+#                 queue.append(0)
+            
+#             arr[i] = queue.pop(0)
+
+# 3rd ...
+
 #         i = 0
             
 #         while i < len(arr):
