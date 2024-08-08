@@ -9,7 +9,7 @@ func duplicateZeros(arr []int)  {
         
     n := len(arr)
     
-    for j:= n-1; j > -1; j -- {
+    for j:= n-1; j >=0; j -- {
         
         if zeroesCount + j < n {
             arr[zeroesCount + j] = arr[j] //shift the existing elements to right based on 0 count
