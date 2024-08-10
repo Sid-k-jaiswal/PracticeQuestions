@@ -9,14 +9,27 @@ class Solution(object):
         
         # [1,1,2] --> [1,2,2]
         
-        count = 1
+        unique = 0
         
-        for i in range(1, len(nums)):
+        for i in range(1,len(nums)):
             
-            if nums[i-1] != nums[i]:
-                nums[count] = nums[i]
-                count += 1
-            
-        print(nums)
+            if nums[i] != nums[unique]:
+                unique += 1
+                nums[unique] = nums[i]
         
-        return count
+        return unique + 1
+            
+        
+# 2nd ...
+
+#         count = 1
+        
+#         for i in range(1, len(nums)):
+            
+#             if nums[i-1] != nums[i]:
+#                 nums[count] = nums[i]
+#                 count += 1
+            
+#         print(nums)
+        
+#         return count
