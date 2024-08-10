@@ -8,6 +8,7 @@ func removeDuplicates(nums []int) int {
             nums[unique] = nums[i]
             unique ++
         }
+        
     }
     
     return unique
