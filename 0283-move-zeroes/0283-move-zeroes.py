@@ -12,7 +12,7 @@ class Solution:
             if nums[i] != 0:
                 nums[pointer],nums[i] = nums[i],nums[pointer]
                 pointer += 1
-                
+        
                 
         
         
